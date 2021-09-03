@@ -1,0 +1,847 @@
+﻿ html{
+     height:100%;
+     scroll-behavior: smooth;
+ }
+body
+{
+    margin:0;
+    height:100%;
+}
+header{
+    height:100%;
+}
+ .header{
+     height:100%;
+     background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(images/julian-engagement-session100.jpg) top center;
+     background-size:cover;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+     transition: all .5s;
+ }
+ .header_content{
+     padding:30px 10px;
+    box-sizing:border-box;
+ }
+  .header_content h1{
+         /*position:relative;*/
+      text-align:center;
+       font-size:32px;
+     /*text-transform:uppercase;*/
+     /*font-family:Arial, sans-serif;*/
+      font-family: 'Magnolia Script', Arial, sans-serif;
+     color:#fff;
+ }
+  .header_content h2{
+    
+      text-align:center;
+      font-size:38px;
+      font-family:Arial, sans-serif;
+      color:#fff;
+      text-transform:uppercase;
+      border-top:3px double #fff;
+       border-bottom:3px double #fff;
+      padding:25px 70px;
+  }
+   .header_content h3{
+        text-align:center;
+        font-size:16px;
+       font-family:Arial, sans-serif;
+      color:#fff;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      /*font-weight:normal;*/
+   }
+   .img_heart{
+       /*position:absolute;
+       left:48%;
+       z-index:3;*/
+   }
+
+   .img_heart img{
+      margin-bottom:-50px !important;
+      display:block;
+      margin:0 auto;
+   }
+
+
+
+   #burger{
+    float:right;
+    display:none;
+}
+.hidden-menu{
+    display:none;
+    width:100%;
+    /*height:100%;*/
+    height:270px;
+    background:#fff;
+    /*z-index:10;*/
+    padding:0;
+    position:relative;
+    box-shadow:0 8px 7px -4px #f2f2f2;
+    overflow:auto;
+}
+.hidden-menu ul{
+    display:block;
+    margin:0;
+    padding:0;
+}
+.hidden-menu ul li{
+    font-family:Arial, sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+    padding:15px;
+    list-style:none;
+    border-bottom:solid 1px #f2f2f2;
+}
+.hidden-menu ul li a{
+    color:#333;
+    text-decoration:none;
+}   
+ .fixed-hidden-menu{ z-index:10; position: fixed; left: 0; top: 100px; width:100%; box-sizing:border-box;  } 
+ .logo{
+        /*width:4em;
+       height:4em;*/
+        width:55px;
+        height:55px;
+       background:#f0394d;
+       border-radius:50%;
+       color:#fff;
+       font-family:Arial, sans-serif;
+       font-size:16px;
+       font-weight:bold;
+       text-align:center;
+       line-height:55px;
+       /*letter-spacing:2px;*/
+       /*left:48%;
+       top:2.6em;*/
+       /*left:48%;
+       top:40px;*/
+   }
+   .nav-bar{
+       /*width:100%;*/
+        display:flex;
+    /*justify-content: center;*/
+    align-items: center;
+       /*position:relative;*/
+       height:130px;
+       margin:0;
+       padding:0;
+       padding:0px 50px 0px 50px;
+       background:#fff;
+   }
+   .fixed-nav-bar{ z-index:10; position: fixed; left: 0; top: 0; width:100%; box-sizing:border-box;} 
+   .menu{
+       display:block;
+       margin:0 auto;
+   }
+   .menu ul{
+       text-align:center;
+       margin:0;
+       padding:0;
+   }
+   .menu ul li{
+       /*float:left;*/
+       display:inline-block;
+       list-style:none;
+      /*list-style:disc;*/
+      /*list-style-image:url(images/svg/24037.svg);*/
+       text-transform:uppercase;
+       margin-right:20px;
+       /*box-sizing:content-box;*/
+       /*line-height:130px;*/
+   }
+   .menu ul li:before {
+   content:url(images/svg/24037.svg);
+   margin-right:20px;
+}
+   .menu ul li:first-child::before{
+       content:"";
+       margin-right:0;
+   }
+   .nav-bar li:last-child{
+       margin-right:0px;
+   }
+   /*li.li3{
+       margin-right:55px;
+   }
+    li.li4{
+       margin-left:75px;
+   }*/
+   .nav-bar li a{
+       color:#333;
+       text-decoration:none;
+       font-family:Arial, sans-serif;
+       font-size:12px;
+       font-weight:bold;
+   }
+   main{
+       height:100%;
+   }
+   .content{
+       height:100%;
+        
+   }
+  .invitation{
+      height:auto;
+     min-height:100%;
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+       font-family:Arial, sans-serif;
+       color:#333;
+       padding:50px 0px 50px 0px;
+       margin-top:130px;
+       /* padding-bottom: 50px; */
+        /* padding:50px 0px; */
+      box-sizing:border-box;
+       background:#f6f6f6;
+  }
+  .invitation-text{
+       width:70%;
+    
+     display:block;
+      margin:0 auto;
+      text-align:center;
+  }
+  .invitation h1{
+         font-size:32px;
+     font-family: 'Magnolia Script', Arial, sans-serif;
+  }
+  .invitation p{
+      line-height:2;
+  }
+  .foto-block{
+      height:100%;
+       background:#f6f6f6;
+      background:url(images/julian-engagement-session78.jpg) center center;
+      background-size:cover;
+      background-attachment:fixed;
+  }
+  .when_where{
+      width:80%;
+      display:block;
+      margin:0 auto;
+      padding:100px 0px;
+      /*padding:50px 10% 50px 10%;*/
+  }
+  .when_where h1{
+        font-size:38px;
+       font-family: 'Magnolia Script', Arial, sans-serif;
+      color:#333;
+      /*text-transform:uppercase;*/
+      text-align:center;
+      padding:50px 0px 50px 0px;
+        /*border-top:3px double #333;
+        width:400px;*/
+        margin:0 auto;
+  }
+  .img_heart_block img{
+       margin-bottom:-15px !important;
+      display:block;
+      margin:0 auto;
+  }
+  .ceremony{
+      float:left;
+      width:38%;
+      height:400px;
+      background:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(images/roz-24.jpg) center center;
+       background-size:cover;
+       padding:5%;
+       box-sizing:padding-box;
+  }
+  .ceremony-content{
+      width:100%;
+      height:100%;
+       background:#fff;
+      opacity:0.7;
+      text-align:center;
+      line-height:2;
+      color:#333;
+      font-family:Arial, sans-serif;
+      font-size:18px;
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+      /*padding:20px 0px 20px;*/
+  }
+  .ceremony-content h3,
+  .ceremony-content p{
+      margin:0;
+  }
+  .when_where a{
+      color:#333;
+      text-decoration-color:#333;
+  }
+  .party{
+      float:right;
+      width:38%;
+      height:400px;
+      background:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(images/153.jpg) center center;
+       background-size:cover;
+       padding:5%;
+       margin-bottom:100px;
+        box-sizing:padding-box;
+  }
+   .party-content{
+      width:100%;
+      height:100%;
+       background:#fff;
+      opacity:0.7;
+      text-align:center;
+      line-height:2;
+      color:#333;
+      font-family:Arial, sans-serif;
+      font-size:18px;
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+      /*padding:20px 0px 20px;*/
+  }
+  .party-content h3,
+  .party-content p{
+      margin:0;
+  }
+  .when-block{
+      /*width:40%;*/
+      background:url(images/chuvstva-obiatiia-radost-ruki-solntse-devushka-paren-liubov.jpg) center center;
+      background-size:cover;
+      padding:5% 20% 5% 20%;
+  }
+  .when-content{
+      background:#fff;
+      opacity:0.7;
+      text-align:center;
+      line-height:2;
+      color:#333;
+      font-family:Arial, sans-serif;
+      font-size:18px;
+      padding:20px 0px 20px;
+  }
+   .daily-schedule{
+        background:#f6f6f6;
+        padding:100px 10px;
+        text-align:center;
+         font-family:Arial, sans-serif;
+         color:#333;
+   }
+   .daily-schedule h1{
+        font-size:38px;
+      /*text-transform:uppercase;*/
+      padding:50px 0px 50px;
+        /*border-top:3px double #333;*/
+        /*width:400px;*/
+        margin:0 auto;
+       font-family: 'Magnolia Script', Arial, sans-serif;
+  }
+   .time{
+       text-decoration:underline;
+   }
+   .attending{
+       height:auto;
+       min-height:100%;
+       background:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/julian-engagement-session7.jpg) center center;
+       background-size:cover;
+       margin:0;
+       padding:0;
+       display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    padding:50px 5px;
+      box-sizing:border-box;
+   }
+ .attending_content {
+  
+ }
+  .attending_content h1{
+      width:400px;
+      display:block;
+      margin:0 auto;
+      text-align:center;
+      font-size:32px;
+      font-family:Arial, sans-serif;
+      color:#fff;
+      text-transform:uppercase;
+      border-top:3px double #fff;
+       border-bottom:3px double #fff;
+      padding-top:25px;
+      padding-bottom:25px;
+  }
+   .attending_content p{
+       width:50%;
+       display:block;
+       margin:0 auto;
+       margin-top:30px;
+        text-align:center;
+        font-size:16px;
+       font-family:Arial, sans-serif;
+      color:#fff;
+      line-height:1.5;
+   }
+  
+   .img_heart_attending img{
+       display:block;
+       margin:0 auto;
+    margin-bottom:-15px;
+   }
+  .RSVP{
+      display:block;
+      margin:0 auto;
+      margin-top:50px;
+      border:solid 1px #fff;
+      background:none;
+      color:#fff;
+      padding:15px 25px;
+       font-size:18px;
+       font-family:Arial, sans-serif;
+  }
+  .RSVP:hover{
+      background:#f0394d;
+       border:solid 1px #f0394d;
+  }
+  .attending_content a{
+       text-decoration:none;
+  }
+  .attending_content a:hover{
+       text-decoration:none;
+  }
+   .gallery{
+        background:#f6f6f6;
+        box-sizing:content-box;
+        padding:100px 0px 100px 0px;
+         font-family:Arial, sans-serif;
+         color:#333;
+         text-align:center;
+   }
+   .gallery h1{
+        font-size:38px;
+      padding:50px 0px;
+        margin:0 auto;
+       font-family: 'Magnolia Script', Arial, sans-serif;
+  }
+   .row{
+       width:100%;
+       margin:0 auto;
+       display:flex;
+       justify-content:center;
+       margin-bottom:30px;
+   }
+   .photo-block{
+       width:300px;
+       height:300px;
+       background:#fff;
+       padding:15px;
+       margin-right:30px;
+   }
+   .photo-block:last-child{
+       margin-right:0;
+   }
+   .photo{
+       width:100%;
+       height:100%;
+       overflow:hidden;
+   }
+   .photo-after{
+       width: 100%;
+       height: 100%;
+       background:#f2f2f2;
+
+       transition: all .5s;
+       position:relative;
+   }
+    #slide1{
+        background:url(images/julian-engagement-session11.jpg) center center;
+       background-size:cover;
+    }
+     #slide2{
+        background:url(images/julian-engagement-session9.jpg) center center;
+       background-size:cover;
+    }
+      #slide3{
+        background:url(images/julian-engagement-session118.jpg) center center;
+       background-size:cover;
+    }
+       #slide4{
+        background:url(images/julian-engagement-session120.jpg) center center;
+       background-size:cover;
+    }
+        #slide5{
+        background:url(images/julian-engagement-session115.jpg) center center;
+       background-size:cover;
+    }
+         #slide6{
+        background:url(images/julian-engagement-session51.jpg) center center;
+       background-size:cover;
+    }
+        
+   .photo:hover .photo-after,
+    .photo:focus .photo-after{
+          transform: scale(1.2);
+   }
+   .photo-after::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:rgba(0, 0, 0, 0.2);
+  /*background:linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(images/vlyublennaya_para.jpg) center center;*/
+}
+
+.photo:hover .photo-after:before,
+.photo:focus .photo-after:before {
+  display: block;
+}
+.clearfix::after{
+    content: "";
+    display:table;
+    clear:both;
+}
+
+.zoom{
+    width:30px;
+    height:30px;
+    padding:5px;
+    background:#fff;
+    border-radius:50%;
+    position:absolute;
+    top:130px;
+    left:130px;
+    display:none;
+}
+.zoom img{
+    /*display:block;
+    margin:0 auto;*/
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.photo:hover .zoom,
+.photo:focus .zoom {
+  display: block;
+}
+.zoom:hover{
+    cursor:pointer;
+    background:#f0394d;
+}
+.slider-back{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    z-index:100;
+    background:#000;
+    opacity:1;
+    display:none;
+}
+.slider{
+    width:100%;
+    height:100%;
+     position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    display:none;
+    /*display:flex;*/
+    /*flex-direction:column;
+    justify-content:center;*/
+}
+.slide-block{
+    width:100%;
+    height:100%;
+    
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   margin:0 auto;
+   box-sizing:border-box;
+}
+.slider-close{
+    /*margin-bottom:5px;*/
+    color:#fff;
+    position:absolute;
+    top:10px;
+    right:10px;
+    z-index:9999;
+}
+.slider-close:hover{
+    cursor:pointer;
+}
+.slide{
+   /*height:90%;*/
+  position:relative;
+  overflow:auto;
+  margin:0;
+  padding:0;
+    /*display:flex;
+    flex-direction:column;
+    justify-content:center;*/
+    /*box-sizing:border-box;
+    flex-wrap:wrap;*/
+}
+.slide img{
+    /*max-height:100%;*/
+    /*box-sizing:border-box;*/
+    width:100%;
+  
+    /*height:auto;*/
+    /*height:100%;
+    display:block;
+    margin:0 auto;*/
+   /*height:80%;*/
+   /*vertical-align:middle;*/
+   /*position:relative;
+  overflow:scroll;*/
+}
+.numbertext{
+    color:#fff;
+     position:absolute;
+    top:10px;
+    left:10px;
+    z-index:9999;
+    /*float:right;*/
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding:10px;
+  margin-top: -20px;
+  color:#fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.timer{
+    min-height:100%;
+    background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(images/julian-engagement-session73.jpg) center center;
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+     padding:50px 0px;
+     box-sizing:border-box;
+}
+.timer h1{
+     font-size:38px;
+      /*padding:50px 0px;*/
+      text-align:center;
+        margin:0;
+       font-family: 'Magnolia Script', Arial, sans-serif;
+       color:#fff;
+}
+.timer p{
+     width:50%;
+       display:block;
+       margin:0 auto;
+       margin-top:30px;
+        text-align:center;
+        font-size:16px;
+       font-family:Arial, sans-serif;
+      color:#fff;
+      line-height:1.5;
+      margin-bottom:50px;
+}
+.timer-block{
+    /*width:40%;*/
+    display:block;
+    margin:0 auto;
+    font-family:Arial, sans-serif;
+    color:#fff;
+     text-align:center;
+      display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.timer-round{
+   /*float:left;*/
+    width:80px;
+   margin-right:30px;
+}
+.timer-round:last-child{
+    margin-right:0;
+}
+.timer-value{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#f0394d;
+    text-align:center;
+    font-size:38px;
+    line-height:80px;
+}
+.timer-round span{
+    font-size:16px;
+    font-weight:bold;
+    text-transform:uppercase;  
+}
+.RSVP-form{
+    background:#f6f6f6;
+    padding:100px 0px;
+}
+.RSVP-form h1{
+     font-size:38px;
+      text-align:center;
+      /*padding-top:50px;*/
+        margin:0;
+       font-family: 'Magnolia Script', Arial, sans-serif;
+       color:#333;
+}
+.RSVP-form p{
+     width:50%;
+       display:block;
+       margin:0 auto;
+       margin-top:30px;
+        text-align:center;
+        font-size:16px;
+       font-family:Arial, sans-serif;
+      color:#333;
+      line-height:1.5;
+      margin-bottom:100px;
+}
+.RSVP-form form{
+     width:80%;
+     display:block;
+     margin:0 auto;
+     position:relative;
+}
+
+.RSVP-form form label{
+     font-size:14px;
+     font-weight:bold;
+       font-family:Arial, sans-serif;
+      color:#555;
+      text-transform:uppercase;
+}
+.text,
+.email{
+    width:48%;
+    padding:5px 0px;
+    border:solid 1px #ccc;
+    margin-bottom:30px;
+    margin-top:5px;
+     box-shadow:0 0 7px 0 #ccc;
+}
+.RSVP-form form select{
+     width:48%;
+    padding:5px;
+    padding-bottom:30px;
+    border:solid 1px #ccc;
+    margin-top:5px;
+    box-shadow:0 0 7px 0 #ccc;
+}
+ .textarea{
+      position:absolute;
+    top:0;
+    left:52%;
+ }
+  textarea{
+      position:absolute;
+    top:17px;
+    left:52%;
+     width:48%;
+    padding:5px;
+    padding-bottom:212px;
+    border:solid 1px #ccc;
+    margin-bottom:30px;
+    margin-top:5px;
+     box-shadow:0 0 7px 0 #ccc;
+ }
+.submit{
+    display:block;
+    margin:0 auto;
+    padding:15px 30px;
+     background:#f0394d;
+     color:#fff;
+     text-transform:uppercase;
+     border:none;
+     margin-top:50px;
+     font-weight:bold;
+       box-shadow:0 0 7px 0 #f0394d;
+}
+
+footer{
+    height:100%;
+      background:linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(images/julian-engagement-session100.jpg) top center;
+     background-size:cover;
+     display: flex;
+     flex-direction:column;
+    justify-content: center;
+}
+footer h1{
+     font-size:38px;
+      text-align:center;
+      padding-top:50px;
+        margin:0;
+       font-family: 'Magnolia Script', Arial, sans-serif;
+       color:#fff;
+   
+}
+.footer{
+    width:100px;
+    display:block;
+    margin:0 auto;
+}
+.img_heart_footer{
+     display:flex;
+     flex-direction:row;
+     justify-content:space-around;
+}
+ .img_heart_footer img{
+       display:block;
+       margin:0 auto;
+    margin-bottom:-15px;
+   }
+.white-line{
+    width: 30px;
+    height: 8px;
+    display: inline-block;
+    border-top: solid 1px #FFF;
+    margin-top:13px;
+}
+footer p{
+    color:#fff;
+    font-family:Arial, sans-serif;
+    font-size:20px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:bold;
+    text-align:center;
+    margin-top:30px;
+}
+
+
+
+
+  @font-face {
+    font-family: 'Magnolia Script';
+    src: local('Magnolia Script'), local('Magnolia-Script'), url('fonts/Magnoliascript.woff2') format('woff2'), url('fonts/Magnoliascript.woff') format('woff'), url('fonts/Magnoliascript.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
